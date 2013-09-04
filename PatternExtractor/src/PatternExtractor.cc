@@ -249,7 +249,7 @@ void PatternExtractor::doAna()
     vector<Sector*> patternsSectors = m_pf->find(m_TK->getHits());
     for(unsigned int i=0;i<patternsSectors.size();i++){
       vector<GradedPattern*> pl = patternsSectors[i]->getPatternTree()->getLDPatterns();
-      cout<<"Found "<<pl.size()<<" patterns"<<endl;
+      cout<<"Found "<<pl.size()<<" patterns in sector "<<patternsSectors[i]->getOfficialID()<<endl;
       //delete the GradedPattern objects
       for(unsigned j=0;j<pl.size();j++){
 	delete pl[j];
