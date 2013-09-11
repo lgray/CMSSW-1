@@ -1,4 +1,4 @@
-#include "CMSPatternLayer.h"
+#include "../interface/CMSPatternLayer.h"
 
 CMSPatternLayer::CMSPatternLayer():PatternLayer(){
 

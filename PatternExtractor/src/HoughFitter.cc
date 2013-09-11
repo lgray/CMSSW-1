@@ -1,4 +1,4 @@
-#include "HoughFitter.h"
+#include "../interface/HoughFitter.h"
 
 HoughFitter::HoughFitter():TrackFitter(){
 }

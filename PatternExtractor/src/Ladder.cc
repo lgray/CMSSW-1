@@ -1,4 +1,4 @@
-#include "Ladder.h"
+#include "../interface/Ladder.h"
 
 Ladder::Ladder(int nbMod, int segmentSize, int sstripSize){
   for(int i=0;i<nbMod;i++){

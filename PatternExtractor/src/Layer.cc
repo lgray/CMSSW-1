@@ -1,4 +1,4 @@
-#include "Layer.h"
+#include "../interface/Layer.h"
 
 Layer::Layer(int nbLad, int nbMod, int segmentSize, int sstripSize){
   for(int i=0;i<nbLad;i++){

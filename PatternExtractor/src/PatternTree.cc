@@ -1,4 +1,4 @@
-#include "PatternTree.h"
+#include "../interface/PatternTree.h"
 
 PatternTree::PatternTree(){
 }

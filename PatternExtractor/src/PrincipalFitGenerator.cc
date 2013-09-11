@@ -1,6 +1,5 @@
-#include "PrincipalFitGenerator.h"
-
-#include "PatternFinder.h"
+#include "../interface/PrincipalFitGenerator.h"
+#include "../interface/PatternFinder.h"
 
 PrincipalFitGenerator::PrincipalFitGenerator(string f, SectorTree *s){
   inputDirectory = f;

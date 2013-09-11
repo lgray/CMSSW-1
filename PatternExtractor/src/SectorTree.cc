@@ -1,4 +1,4 @@
-#include "SectorTree.h"
+#include "../interface/SectorTree.h"
 
 SectorTree::SectorTree(){
   srand ( time(NULL) );

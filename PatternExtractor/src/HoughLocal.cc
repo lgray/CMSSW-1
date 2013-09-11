@@ -1,4 +1,4 @@
-#include "HoughLocal.h"
+#include "../interface/HoughLocal.h"
 #include <TLine.h>
 #include <TEllipse.h>
 

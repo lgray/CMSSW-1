@@ -1,4 +1,4 @@
-#include "Track.h"
+#include "../interface/Track.h"
 
 Track::Track(){
   curve = 0;

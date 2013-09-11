@@ -1,4 +1,4 @@
-#include "Pattern.h"
+#include "../interface/Pattern.h"
 
 Pattern::Pattern(int nb){
   nb_layer = nb;

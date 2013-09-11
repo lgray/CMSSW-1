@@ -1,4 +1,4 @@
-#include "PatternGenerator.h"
+#include "../interface/PatternGenerator.h"
 
 PatternGenerator::PatternGenerator(int sp){
   superStripSize = sp;

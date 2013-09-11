@@ -1,4 +1,4 @@
-#include "FitParams.h"
+#include "../interface/FitParams.h"
 
 FitParams::FitParams(){
   nb_layers = 4;

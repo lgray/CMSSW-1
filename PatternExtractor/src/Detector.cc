@@ -1,4 +1,4 @@
-#include "Detector.h"
+#include "../interface/Detector.h"
 
 Detector::Detector(){
   dump=NULL;

@@ -1,4 +1,4 @@
-#include "GradedPattern.h"
+#include "../interface/GradedPattern.h"
 
 GradedPattern::GradedPattern():Pattern(){
   grade=0;

@@ -1,4 +1,4 @@
-#include "SuperStrip.h"
+#include "../interface/SuperStrip.h"
 
 SuperStrip::SuperStrip(int s){
   hit=false;

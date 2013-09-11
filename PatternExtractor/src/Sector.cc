@@ -1,4 +1,4 @@
-#include "Sector.h"
+#include "../interface/Sector.h"
 
 map< int, vector<int> > Sector::readConfig(string name){
   string line;

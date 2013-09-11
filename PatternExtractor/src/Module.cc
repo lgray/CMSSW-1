@@ -1,4 +1,4 @@
-#include "Module.h"
+#include "../interface/Module.h"
 
 Module::Module(int segmentSize, int sstripSize){
   segments[0]=new Segment(segmentSize, sstripSize);

@@ -1,4 +1,4 @@
-#include "PrincipalTrackFitter.h"
+#include "../interface/PrincipalTrackFitter.h"
 
 PrincipalTrackFitter::PrincipalTrackFitter():TrackFitter(){
   threshold = 1000;

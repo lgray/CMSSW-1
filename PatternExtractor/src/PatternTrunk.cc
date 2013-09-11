@@ -1,4 +1,4 @@
-#include "PatternTrunk.h"
+#include "../interface/PatternTrunk.h"
 
 PatternTrunk::PatternTrunk(Pattern* p){
   lowDefPattern = new GradedPattern(*p);

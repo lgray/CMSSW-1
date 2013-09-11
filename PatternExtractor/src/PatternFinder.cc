@@ -1,4 +1,4 @@
-#include "PatternFinder.h"
+#include "../interface/PatternFinder.h"
 
 PatternFinder::PatternFinder(int sp, int at, SectorTree* st, string f, string of){
   superStripSize = sp;

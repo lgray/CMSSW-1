@@ -25,8 +25,8 @@ using namespace std;
 #include "TTree.h"
 #include "TFile.h"
 
-#include "../src/Hit.h"
-#include "../src/CMSPatternLayer.h"
+#include "Hit.h"
+#include "CMSPatternLayer.h"
 
 class L1TrackTrigger_Reader
 {

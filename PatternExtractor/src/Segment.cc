@@ -1,4 +1,4 @@
-#include "Segment.h"
+#include "../interface/Segment.h"
 
 Segment::Segment(int stripNumber, int sstripSize){
   int nbSStrips=stripNumber/sstripSize;

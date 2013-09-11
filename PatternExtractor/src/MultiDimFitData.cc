@@ -1,4 +1,4 @@
-#include "MultiDimFitData.h"
+#include "../interface/MultiDimFitData.h"
 
 MultiDimFitData::~MultiDimFitData(){
   //cout<<"destruction MultiDimFitData"<<endl;

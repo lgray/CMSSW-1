@@ -1,6 +1,6 @@
 #include <sstream>
 #include <iomanip>
-#include "PatternLayer.h"
+#include "../interface/PatternLayer.h"
 
 map<string, int> PatternLayer::GRAY_POSITIONS = PatternLayer::CreateMap();
 
