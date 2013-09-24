@@ -78,9 +78,10 @@ private:
   std::string inFilename_;
   std::string outFilename_;
   std::string inBankname_;
-  int threshold_;
+  int  threshold_;
   int  nevts_;
   int  skip_;
+  int  keepID_;
 
   bool do_TK_;
   int nevent_tot;

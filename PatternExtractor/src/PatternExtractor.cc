@@ -10,7 +10,8 @@ PatternExtractor::PatternExtractor(const edm::ParameterSet& iConfig):
   inBankname_     (iConfig.getParameter<std::string>("inputBankFile")),
   threshold_      (iConfig.getParameter<int>("threshold")),
   nevts_          (iConfig.getUntrackedParameter<int>("n_events",       10000)),
-  skip_           (iConfig.getUntrackedParameter<int>("skip_events",    0))
+  skip_           (iConfig.getUntrackedParameter<int>("skip_events",    0)),
+  keepID_         (iConfig.getUntrackedParameter<int>("keepID",    0))
 {
    //now do what ever initialization is needed
 
@@ -50,22 +51,13 @@ void PatternExtractor::beginJob()
 // ------------ method called once each job just after ending the event loop  ------------
 void PatternExtractor::endJob() 
 { 
-
   delete(m_pf);
   
   std::cout << "Total # of events treated for this job   = "<< nevent_tot     << std::endl;
 
-  //  if (!use_file_) 
-  //  {
-    m_outfile->Write();
-    m_outfile->Close();
-    //  }
-  //  else
-    //  {
-    m_infile->Close();
-    //m_outfile->Write();
-    //m_outfile->Close();
-    /// }
+  m_outfile->Write();
+  m_outfile->Close();
+  m_infile->Close();
 }
 
 
@@ -108,7 +100,9 @@ void PatternExtractor::beginRun(edm::Run const&, edm::EventSetup const&)
       PatternExtractor::getInfo(i);// Retrieve the info from an existing ROOTuple      
       PatternExtractor::doAna();   // Then do the analysis on request  
 
-      ++nevent_tot; 
+      (keepID_==1)
+	? nevent_tot = m_TK->event_num() // Do we use the event id or not?
+	: nevent_tot = i; 
     }
   }
 
@@ -180,7 +174,7 @@ void PatternExtractor::endRun(edm::Run const&, edm::EventSetup const&)
 
 void PatternExtractor::initialize()
 {  
-  nevent_tot    = skip_;
+  nevent_tot    = 0;
 
   m_outfile     = new TFile(outFilename_.c_str(),"RECREATE");
   m_patt_links  = new  std::vector< std::vector<int> >; 

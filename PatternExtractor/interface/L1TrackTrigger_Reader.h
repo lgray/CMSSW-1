@@ -36,6 +36,8 @@ class L1TrackTrigger_Reader
   ~L1TrackTrigger_Reader();
   
   //Selection
+  int  event_num() {return n_tot_evt;}
+
   int  n_events() {return m_n_events;}
   void getInfo(int ievt); 
 
