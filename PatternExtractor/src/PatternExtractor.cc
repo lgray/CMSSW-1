@@ -98,11 +98,12 @@ void PatternExtractor::beginRun(edm::Run const&, edm::EventSetup const&)
 
       PatternExtractor::reset();   // Free memory for this event
       PatternExtractor::getInfo(i);// Retrieve the info from an existing ROOTuple      
-      PatternExtractor::doAna();   // Then do the analysis on request  
 
       (keepID_==1)
 	? nevent_tot = m_TK->event_num() // Do we use the event id or not?
 	: nevent_tot = i; 
+
+      PatternExtractor::doAna();   // Then do the analysis on request  
     }
   }
 
